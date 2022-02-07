@@ -1,13 +1,171 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+input,button {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+
 }
+
+.App {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to TOP LEFT, black ,#53565A);
+   
+
+}
+
+
+
+form {
+    display:  block;
+    position: relative;
+
+}
+
+form:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom:-20px;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right, black,#53565A);
+}
+
+form .form-inner  {
+    position: relative;
+    display: block;
+    background-color: grey;
+    padding: 40px;
+    z-index: 2;
+}
+
+
+
+form .form-inner h2 {
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    background-image:  linear-gradient(to right, black,#53565A);
+}
+
+form .form-inner .form-group {
+    display: block;
+    width: 300px;
+    margin-bottom: 30px;
+    
+}
+
+
+.form-inner .form-group label {
+    display: block;
+    color: black;
+    font-size: 15px;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+.form-inner .form-group:focus-within label {
+    color:blue;
+}
+
+form .form-inner .form-group input {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 8px;
+    transition:  0.4s;
+
+}
+
+form .form-inner .form-group input:focus {
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+}
+
+form .form-inner input[type="submit"] {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, blue,lightblue);
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: whitesmoke;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+    
+}
+
+form .form-inner input[type="submit"]:hover,.Welcome button:hover  {
+    background-position: 100% 0%;
+}
+
+
+.Welcome {
+
+    width:100%;
+    max-width: 300px;
+    max-height: 50px;
+    background: center;
+    padding: 15px 30px;
+    background-image: linear-gradient(to right, blue,lightblue);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+
+}
+
+.Welcome h2 {
+    color:black;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.Welcome button {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, black,grey);
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: whitesmoke;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+    
+}
+
+.Welcome h2 span {
+    color: black;
+    font-weight: 700;
+}
+
+
+form .forgot-password  a[ href="no-javascript1.html"] {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+form .forgot-password  a[ href="no-javascript2.html"] {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
